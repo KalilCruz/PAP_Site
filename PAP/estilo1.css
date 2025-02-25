@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-image: url("Imagens/bk.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Formulários */
+form {
+  border: 3px solid #f1f1f1;
+  background-color: rgba(99, 99, 99, 0.438);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+form input[type="text"], 
+form input[type="password"], 
+form input[type="email"], 
+form input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form .cancelbtn {
+  background-color: #f44336;
+  padding: 10px 18px;
+  border-radius: 5px;
+  width: auto;
+}
+
+form .erro {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form .sucesso {
+  background-color: #6fb65a;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #04AA6D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Imagem no formulário */
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.imgcontainer img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Mensagem de senha no formulário */
+span.psw {
+  color: #ffffff;
+  float: right;
+  padding-top: 16px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 300px) {
+  span.psw {
+      display: block;
+      float: none;
+  }
+
+  form button {
+      padding: 12px 15px;
+  }
+
+  form .cancelbtn {
+      width: 100%;
+  }
+}
+  iframe {
+  border: none;
+}
